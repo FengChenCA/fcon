@@ -1,5 +1,5 @@
 # FCON
-FCON is a partially implemented, simple HTTP server that mimics some of the basic operations of a container runtime.  This repository is intended used as an exercise to evaluate a developer with minimal Golang knowledge and working knowledge of REST APIs.  An experienced Golang developer should be able to complete this exercise in less than an hour.    
+FCON is a partially implemented, simple HTTP server that mimics some of the basic operations of a container runtime.  This repository is intended to be used as an exercise to evaluate a developer with minimal Golang knowledge and working knowledge of REST APIs.  An experienced Golang developer should be able to complete this exercise in less than an hour.    
 
 ## Getting Started
 Directions for building, running, testing, etc... are intentionally missing.  This exercise is designed to test your resourcefulness and ability to learn from documentation, in addition to evaluating your coding skills.  
@@ -12,9 +12,11 @@ The sections that you need to implement are marked with a `//TODO:` comment.  So
   - https://golang.org/doc/
   - https://golang.org/pkg/
   - https://gobyexample.com/
+  - https://github.com/Microsoft/vscode-go
+  - https://github.com/DisposaBoy/GoSublime
   
 ## Requirements
-The requirements are intentionally open ended.  There is no "one right answer"; that being said, not all answers are correct.  Your code will be judged on readability, correctness, reusability, etc...
+The requirements are intentionally open ended.  There is no one right answer; that being said, not all answers are correct.  Your code will be critiqued based on readability, correctness, reusability, etc...
 
 ### Basic
   - Compiles and does not crash (no panics!)
@@ -37,10 +39,11 @@ POST and PUT endpoints must support JSON bodies.
     - delete: remove an existing container, JSON response of deleted container
 
 ### Containers
+  - PIDs must be unique
   - PIDs must not be mutable
-  - Name must be unique at all times
+  - Name must be unique
   - Name cannot be changed while container is running
-  - State must be valid at all times
+  - State must be valid
 
 ### Responses
   - Appropriate status codes must be used
